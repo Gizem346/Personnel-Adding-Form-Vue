@@ -50,19 +50,19 @@ const onSubmit = () => {
 
           <div class="input-group mb-3">
             <label>Name
-              <input v-model.lazy="name" type="text" class="form-control">
+              <input v-model.lazy="name" type="text" class="form-control" required>
             </label>
           </div>
 
           <div class="input-group mb-3">
             <label>Surname
-              <input v-model.lazy="surname" type="text" class="form-control">
+              <input v-model.lazy="surname" type="text" class="form-control" required>
             </label>
           </div>
 
           <div class="input-group mb-3">
             <label>Title
-              <input v-model.lazy="title" type="text" class="form-control">
+              <input v-model.lazy="title" type="text" class="form-control" required>
             </label>
           </div>
 
@@ -85,7 +85,7 @@ const onSubmit = () => {
           </div>
 
           <div class="input-group mb-3">
-            <input type="text" v-model="image" class="form-control" id="choose-pphoto" placeholder="Add your photo url">
+            <input type="text" v-model="image" class="form-control" id="choose-pphoto" placeholder="Add your photo url" required>
             <label for="choose-photo" class="input-group-text">Profile Photo</label>
           </div>
 
